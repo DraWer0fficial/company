@@ -1,0 +1,477 @@
+@charset "UTF-8";
+
+
+/* TOP HEADER  */
+
+header .color {
+  padding: 10px 30px;
+  color: #222;
+  background: linear-gradient(#fff, #a88bde);
+  border-radius: 40px;
+}
+
+
+/* SECTION TOP  */
+.top {
+  width: 100%;
+  margin-bottom: 200px;
+  bottom: 8px;
+}
+.top_bg {
+  position: absolute;
+  padding-top: 100px;
+  top: 0;
+  right: 0;
+  z-index: -50;
+}
+.top_bg img {
+  width: 400px;
+  height: 400px;
+  right: 10%;
+  z-index: -5;
+}
+.catch_copy {
+  padding-top: 200px;
+}
+.catch_copy h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.line {
+  border: 2px solid #000;
+  width: 50px;
+}
+.catch_copy h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.catch_copy p {
+  color: #888;
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+/* SECTION ABOUT  */
+.about {
+  width: 100%;
+  margin-bottom: 200px;
+  bottom: 8px;
+}
+.about_inner {
+  text-align: center;
+}
+.about_inner h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.about_inner .line {
+  margin: 0 auto;
+  width: 50px;
+  border: 2px solid;
+}
+.about_inner h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.about_inner p {
+  width: 60%;
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: left;
+  border-left: 8px solid #8f64ab;
+}
+.about_tag .about_list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.about_list li {
+  margin: 20px;
+}
+
+
+
+/* SECTION NEWS  */
+.news {
+  width: 100%;
+  margin-bottom: 200px;
+  bottom: 8px;
+}
+.news_inner {
+  text-align: center;
+}
+.news_inner h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.news_inner .line {
+  margin: 0 auto;
+  width: 50px;
+  border: 2px solid;
+}
+.news_inner h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.card_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+.card {
+  margin: 10px 10px;
+  box-shadow: 0 2px 10px #999;
+}
+.card .text {
+  font-weight: bold;
+  padding: 10px 0;
+}
+.text a {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+/* SECTION SERVICE  */
+.service {
+  margin-bottom: 200px;
+  bottom: 8px;
+}
+.service_inner {
+  text-align: center;
+}
+.service_inner h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.service_inner .line {
+  margin: 0 auto;
+  width: 50px;
+  border: 2px solid;
+}
+.service_inner h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.service_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service_img img {
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+}
+.service_item {
+  width: 48%;
+  height: 400px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+  box-shadow: 10px 10px 20px #ddd;
+  margin: 5% 0;
+  border: 3px solid #999;
+}
+.service_item p {
+  text-align: left;
+  margin-top: 50px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+.service_item h4 {
+  position: absolute;
+  font-size: 33px;
+  color: #fff;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+
+/* FOOTER BUTTON  */
+.sarch input:first-of-type:focus {
+  background: linear-gradient( #fff, #c5b2d6);
+}
+
+
+/* SECTION CONTACT  */
+.contact {
+  width: 100%;
+  margin-bottom: 200px;
+  bottom: 8px;
+}
+.contact_inner {
+  text-align: center;
+}
+.contact_inner h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.contact_inner .line {
+  margin: 0 auto;
+  width: 50px;
+  border: 2px solid;
+}
+.contact_inner h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.contact_item {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+.contact_txt {
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.form .label {
+  margin: 10px 0;
+}
+.contact-form .form input[type=text],
+.contact-form .form input[type=email],
+.contact-form .form textarea,
+.contact-form .form select {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.contact-form .form ::placeholder {
+  color: #ccc;
+}
+.contact-form .form textarea {
+  outline: none;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+.form {
+  margin: 20px 0;
+}
+.contact_form label {
+  margin: 5px 0;
+}
+
+
+
+@media screen and (max-width: 780px) {
+  header .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: linear-gradient(#fff, #c5b2d6);
+  }
+  .top {
+    width: 90%;
+  }
+  .top_bg img {
+    width: 250px;
+    height: 250px;
+    z-index: -10;
+  }
+  .catch_copy {
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  header .header_logo img {
+    width: 100px;
+  }
+  .catch_copy h1 {
+    font-size: 25px;
+    width: 70%;
+  }
+  .detail_btn {
+    padding: 10px 30px;
+  }
+  .top {
+    margin-bottom: 100px;
+  }
+  .about {
+    margin-bottom: 100px;
+    width: 90%;
+  }
+  .about_inner {
+    text-align: center;
+  }
+  .about_inner .line {
+    width: 30px;
+    margin: 0 auto;
+  }
+  .about_inner h1 {
+    font-size: 30px;
+  }
+  .about_inner h2 {
+    font-size: 20px;
+  }
+  .about_inner p {
+    margin: 0 auto;
+    width: 90%;
+    border-right:  8px solid #8f64ab;
+  }
+  .about_box {
+    text-align: center;
+  }
+  .about_tag .about_list {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px
+  }
+  .about_tag1 {
+    padding: 10px 25px;
+    margin: 10px;
+  }
+  .about_tag2 {
+    padding: 10px 20px;
+    margin: 10px;
+  }
+
+  .news {
+    margin-bottom: 100px;
+    width: 90%;
+  }
+  .news_inner {
+    text-align: center;
+  }
+  .news_inner .line {
+    margin: 0 auto;
+    width: 30px;
+  }
+  .news_inner h1 {
+    font-size: 30px;
+  }
+  .news_inner h2 {
+    font-size: 20px;
+  }
+  .card_wrap {
+    margin: 0 auto;
+  }
+  .card {
+    width: 90%;
+  }
+  .card img {
+    width: 80%;
+  }
+  .text a {
+    font-size: 15px;
+  }
+  .news_btn {
+    padding: 10px 30px;
+  }
+
+
+  .service {
+    margin-bottom: 100px;
+  }
+  .service_inner {
+    text-align: center;
+  }
+  .service_inner h1 {
+    font-size: 30px;
+  }
+  .service_inner h2 {
+    font-size: 20px;
+  }
+  .service_inner .line {
+    margin: 0 auto;
+    width: 30px;
+  }
+  .service_list {
+    display: block;
+    margin: 20px 0;
+  }
+  .service_item {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    display: block;
+    padding: 20px 0;
+  }
+  .service_img img {
+    width: 80%;
+    padding: 20px 0;
+  }
+  .service1 {
+    margin-bottom: 20px;
+  }
+  .service_item p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+  .contact {
+    width: 90%;
+  }
+  .contact_inner {
+    text-align: center;
+  }
+  .contact_inner h1 {
+    font-size: 25px;
+  }
+  .contact_inner h2 {
+    font-size: 15px;
+  }
+  .contact_inner .line {
+    margin: 0 auto;
+    width: 30px;
+  }
+  .contact_item {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .contact_txt {
+    line-height: 1.2;
+  }
+  .contact_button {
+    padding: 10px 30px;
+  }
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .fluid {
+   display: none;
+  }
+  .fluid_two {
+    display: none;
+  }
+  .fluid_four {
+    display: none;
+  }
+  .contact-form .form input[type=text],
+  .contact-form .form input[type=email], 
+  .contact-form .form textarea, 
+  .contact-form .form select {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* ページトップ画像 */
+#page_top a {
+  display: block;
+  width: 110px;
+  height: 100px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 10px;
+  background: url(../img/scroll_top_pink.png) no-repeat center;
+  background-size: contain;
+}

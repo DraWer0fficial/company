@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+// HOME部分のFLUID
+@mixin hFluid {
+  position: absolute;
+  z-index: -10;
+  transform-origin: 50% 48%;
+  border-radius: 47%;
+  animation: drift 20s infinite linear;
+  box-shadow: 0 2px 30px #999;
+  background: linear-gradient(#ffccff, #ff99ff, #ff66ff);
+}
+
+// DETAIL部分のFLUID
+@mixin dFluid {
+  position: absolute;
+  z-index: -10;
+  box-shadow: 0 2px 30px #999;
+  background: linear-gradient(#d0e39b, #c0db75, #b0c865);
+  transform-origin: 50% 48%;
+  border-radius: 47%;
+  animation: drift 20s infinite linear;
+}
+
+// NEWS部分のFLUID
+@mixin nFluid {
+  position: absolute;
+  z-index: -10;
+  box-shadow: 0 2px 30px #999;
+  background: linear-gradient(#f69679, #f37053, #c83e36);
+  transform-origin: 50% 48%;
+  border-radius: 47%;
+  animation: drift 20s infinite linear;
+}
+
+// SERVICE部分のFLUID
+@mixin sFluid {
+  position: absolute;
+  z-index: -10;
+  box-shadow: 0 2px 30px #999;
+  background: linear-gradient(#aeb5dc, #8490c8, #5c73b7);
+  transform-origin: 50% 48%;
+  border-radius: 47%;
+  animation: drift 20s infinite linear;
+}

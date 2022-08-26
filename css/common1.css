@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+* {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+@keyframes drift {
+  from {transform: rotate(0deg);}
+  from {transform: rotate(360deg);}
+}
+h6 {
+  line-height: 1.5;
+}
+.catch_copy {
+  padding-top: 200px;
+}
+.catch_copy h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.line {
+  border: 2px solid #000;
+  width: 50px;
+}
+.catch_copy h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* ヘッダー */
+header {
+  width: 100%;
+  display: inline-block;
+  z-index: 10;
+}
+header .header_logo {
+  position: absolute;
+  padding: 5px 0 0 20px;
+}
+header .header_logo img {
+  width: 150px;
+  height: auto;
+  z-index: 2;
+}
+header .navbar ul {
+  display: flex;
+  float: right;
+  margin: 15px;
+}
+header .navbar ul li {
+  margin: 10px;
+  padding-right: 20px;
+}
+header .navbar ul li a {
+  font-weight: 700;
+  font-size: 18px;
+}
+header .navbar ul li a:hover {
+  opacity: .7;
+}
+header .respons {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+header .border {
+  background: linear-gradient(transparent 85%, yellow 85%);
+}
+#hamburger {
+  visibility: hidden;
+}
+
+/* FOOTER  */
+.sarch {
+  width: 300px;
+  height: 30px;
+}
+footer {
+  margin-top: 100px;
+}
+.footer {
+  color: #808080;
+  background-color: #eaeaea;
+  padding: 30px;
+}
+.footer a {
+  color: #808080;
+}
+.footer li a:hover {
+  text-decoration: underline;
+}
+.footer .footer_wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .footer_wrap h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+.footer .footer_wrap p {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+.footer .footer_wrap .footer_box {
+  width: 30%;
+}
+.footer .footer_wrap .footer_box ul {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+.footer .footer_wrap .copyright {
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+.sarch input:first-of-type {
+  box-sizing: border-box;
+  width: inherit;
+  height: inherit;
+  background-color: #fff;
+  outline: none;
+}
+
+.sarch input:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  height: inherit;
+  background-color: #FFFFF0;
+  cursor: pointer;
+  outline: none;
+}
+input:first-of-type:focus {
+  border: 1px solid;
+}
+
+@media screen and (max-width: 780px) {
+  .footer .footer_wrap .footer_box {
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer .footer_wrap .copyright {
+    text-align: center;
+  }
+  section .wrapper {
+    padding: 0;
+  }
+  .sarch {
+    margin: 0 auto;
+  }
+  .footer .footer_wrap .footer_box {
+  width: 100%;
+  }
+  .footer .footer_wrap .footer_box ul li a {
+    display: block;
+    padding: 5px 15px;
+  }
+  .fluid_four {
+    display: none;
+  }
+  .fluid_five {
+    display: none;
+  }
+  .fluid {
+    display: none;
+  }
+  header .header_logo {
+    padding: 0;
+  }
+  header .header_logo img {
+    width: 120px;
+  }
+
+  /* ハンバーガーメニュー */
+  #hamburger {
+    visibility: visible;
+    width: 25px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    border-top: solid 4px #000;
+    cursor: pointer;
+    z-index: 100;
+  }
+  #hamburger::before,
+  #hamburger::after {
+    content: "";
+    display: block;
+    width: 25px;
+    background: #000;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  header #hamburger::before {
+    top: 6px;
+  }
+  header #hamburger::after {
+    top: 15px;
+  }
+
+  header .navbar ul {
+    display: block;
+    text-align: center;
+    float: none;
+    top: 20%;
+  }
+  header .navbar ul li {
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto 20px;
+    padding: 10px 0;
+    padding-right: 0;
+    border-right: none;
+  }
+  .color {
+    background: none;
+    border-radius: none;
+  }
+  header .navbar ul li a {
+    font-size: 20px;
+    line-height: 2;
+  }
+  header .respons {
+    visibility: visible;
+  }
+  body.nav-open header #hamburger {
+    border-top: 0;
+  }
+  body.nav-open header #hamburger::before {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+  body.nav-open header #hamburger::after {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer .footer_wrap .footer_box {
+    width: 80%;
+  }
+}

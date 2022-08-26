@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>株式会社COMPANY</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!-- CSSファイル -->
+ <link rel="stylesheet" type="text/css" href="css/common1.css">
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+ <link rel="stylesheet" type="text/css" href="css/reset.css">
+ <link rel="stylesheet" type="text/css" href="css/animation.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <!-- SCSSファイル -->
+ <link rel="stylesheet" type="text/scss" href="./scss/style.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_main.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_color.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_button.scss">
+ <link rel="stylesheet" type="text/scss" href="./scss/_mixin.scss">
+ <!-- [if lt IE 9] -->
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <!-- [endif] -->
+ </head>
+ <body>
+   <!-- ローディングアニメーション -->
+   <!-- <div id="load_animation">
+     <div class="object"></div>
+   </div> -->
+ <!----- header----->
+ <header id="header">
+  <div class="header_all wrapper">
+    <a href="index.html" class="header_logo"><img src="img/company_logo.png" alt="ロゴ画像"></a>
+    <nav class="navbar" id="js_nav">
+      <ul>
+        <li><a href="index.html" class="border">TOP</a></li>
+        <li><a href="html/detail.html">DETAIL</a></li>
+        <li><a href="html/news.html">NEWS</a></li>
+        <li><a href="html/service.html">SERVICE</a></li>
+        <li><a href="#contact" class="color">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="hamburger"></div>
+ </header>
+ <!----- /header ----->
+ 
+ <!----- main ----->
+ <main>
+   <section class="top wrapper">
+    <div class="catch_copy">
+      <h1 class="box fadeUp delay_time02 fadeUpTrigger">Let's revolutionize your world</h1>
+      <p class="line box fadeLeft delay_time03 fadeUpTrigger"></p>
+      <h2 class="box fadeUp delay_time04 fadeUpTrigger">君の世界に革命を起こそう</h2>
+      <p class="box fadeUp delay_time06 fadeUpTrigger">2021 Founded Company Co., Ltd.<br> Representative Director tatemasu kaisha</p>
+      <a href="html/detail.html" class="btn box fadeUp delay_time08 fadeUpTrigger">DETAIL</a>
+    </div>
+    <div class="top_bg">
+      <a href="#top"><img class="box fadeRight delay_time06 fadeUpTrigger" src="img/top_right.png" alt="トップ画像"></a>
+      <div class="fluid"></div>
+     </div>
+   </section>
+
+   <section class="about wrapper">
+    <div class="about_inner">
+      <h1 class="box fadeUp delay_time02 fadeUpTrigger">ABOUT</h1>
+      <p class="line box fadeUp delay_time03 fadeUpTrigger"></p>
+      <h2 class="box fadeUp delay_time06 fadeUpTrigger">会社概要</h2>
+      <div class="about_tag">
+        <ul class="about_list">
+          <li class="btn box fadeLeft delay_time08 fadeUpTrigger">METHOD</li>
+          <li class="btn box fadeRight delay_time08 fadeUpTrigger">REVOLUTION</li>
+        </ul>
+      </div>
+      <div class="about_box">
+      <p>当会社、株式会社Companyはもともと一つのフリーランス集団である、Groupという集団から派生して作られた会社です。そこで培ったノウハウや業務上で使う知識を楽しく学べるように創設されたプログラミングスクールです。</p></div>
+    </div>
+   </section>
+
+   <section class="news wrapper">
+    <div class="news_inner">
+      <h1 class="box fadeUp delay_time02 fadeUpTrigger">NEWS</h1>
+      <p class="line box fadeUp delay_time03 fadeUpTrigger"></p>
+      <h2 class="box fadeUp delay_time04 fadeUpTrigger">お知らせ</h2>
+
+        <ul class="card_wrap">
+          <li class="card">
+            <h4 class="card_title">2021.8.3</h4>
+            <div card_img><a href="html/news.html"><img src="img/news.png" alt="news画像"></a></div>
+            <div class="text">
+              <p><a href="html/news.html">お盆休みについてのお知らせ</a></p>
+            </div>
+        </li>
+
+          <li class="card">
+            <h4 class="card_title">2021.08.7</h4>
+            <div card_img><a href="html/news.html"><img src="img/news.png" alt="news画像"></a></div>
+            <div class="text">
+              <p><a href="html/news.html">新しいプランの紹介</a></p>
+            </div>
+          </li>
+
+          <li class="card">
+            <h4 class="card_title">2021.08.7</h4>
+            <div card_img><a href="html/news.html"><img src="img/news.png" alt="news画像"></a></div>
+            <div class="text">
+              <p><a href="html/news.html">新しいメンターの紹介</a></p>
+            </div>
+          </li>
+        </ul>
+        <a href="html/news.html" class="btn">NEWS</a>
+        <div class="fluid_two"></div>
+    </div>
+    <div class="fluid_five"></div>
+   </section>
+
+   <section class="service wrapper">
+    <div class="service_inner">
+      <h1 class="box fadeUp delay_time02 fadeUpTrigger">SERVICE</h1>
+      <p class="line box fadeUp delay_time03 fadeUpTrigger"></p>
+      <h2 class="box fadeUp delay_time04 fadeUpTrigger">サービス紹介</h2>
+      <div class="fluid_three"></div>
+
+      <div class="service_all">
+        <ul class="service_list">
+    
+          <li class="service_item service1 box fadeUp delay_time02 fadeUpTrigger">
+            <div class="service_img"><img src="img/service.png" alt="サービス画像"></div>
+              <p>
+               「人生をコードと共に」というミッションを掲げ、よりプログラミングを学習しやすい環境を提供しています。また、WithCode+の教材を通じて日本社会に優秀なIT人材を輩出します。
+              </p>
+          </li>
+          <li class="service_item service2 box fadeUp delay_time04 fadeUpTrigger">
+            <div class="service_img"><img src="img/service.png" alt="サービス画像"></div>
+              <p>
+               「人生をコードと共に」というミッションを掲げ、よりプログラミングを学習しやすい環境を提供しています。また、WithCode+の教材を通じて日本社会に優秀なIT人材を輩出します。
+              </p>
+          </li>
+          </ul>
+        </div>
+        <a href="html/service.html" class="btn">SERVICE</a>
+      </div>
+      <div class="fluid_four"></div>
+    </section>
+
+    <section class="contact wrapper" id="contact">
+      <div class="contact_inner">
+        <h1>CONTACT</h1>
+        <p class="line"></p>
+        <h2>お問い合わせ</h2>
+        <div class="contact_item">
+        <p class="contact_txt">弊社についてお尋ねしたいこと等ございましたら、下記のコンタクトフォームからお気軽にお問い合わせ下さい。弊社の担当者がメールの内容の方を確認次第、ご連絡させて頂きます。</p></div>
+
+
+        <div class="fluid_six"></div>
+        <form class="contact-form">
+          <div class="form">
+          <label for="name" class="contact_form">お問い合わせ項目</label>
+          <select class="contact_form_box1" name="subject" required="required">
+            <optgroup value>
+              <option class="select_with" value="プルダウンメニューで問い合わせ内容を選択" hidden>お問い合わせ内容を選択</option>
+              <option class="select_with" value="サイト制作/運用の見積もり">サイト制作/運用の見積もり</option>
+              <option class="select_with" value="システム制作/運用の見積もり">システム開発/運用の見積もり</option>
+              <option class="select_with" value="その他">その他</option>
+            </optgroup>
+          </select>
+          </div>
+          <div class="form">
+            <label class="label" for="name" name="name">お名前</label>
+            <input id="name" type="text">
+          </div>
+          <div class="form">
+            <label class="label" for="name" name="email">Eメール</label>
+            <input id="name" type="text">
+          </div>
+          <div class="form">
+            <label class="label" for="name" name="name">お問い合わせ内容</label>
+            <textarea id="message" name="comment" cols="30" rows="10"></textarea>
+          </div>
+            <a href="https://withcode.tech" class="btn">SUBMIT</a>
+        </form>
+        </div>
+    </section>
+ </main>
+ <!----- /main ----->
+ 
+ <!----- footer ----->
+ <footer>
+  <p id="page_top"><a href="#"><span>Page Top</span></a></p>
+  <div class="footer">
+   <div class="footer_wrap">
+   <div class="footer_box">
+     <h3>会社概要</h3>
+     <ul>
+       <li><a href="index.html">TOP</a></li>
+       <li><a href="html/detail.html">DETAIL</a></li>
+       <li><a href="html/news.html">NEWS</a></li>
+       <li><a href="html/service.html">SERVICE</a></li>
+       <li><a href="#contact">CONTACT</a></li>
+     </ul>
+   </div>
+   <div class="footer_box">
+     <h3>このサイトについて</h3>
+     <p>こちらは株式会社カンパニーのHPです。会社についての質問等はお手数ですがCONTACTの方からお願い致します。</p>
+   </div>
+   <div class="footer_box">
+     <form class="sarch">
+       <input type="text" placeholder="検索">
+       <input type="submit" value="🔍" class="fas">
+     </form>
+   </div>
+   <p class="copyright">&copy; 2021 株式会社COMPANY HP</p>
+   </div>
+  </div>
+</footer>
+ <!----- /footer ----->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
+ </body>
+</html>
